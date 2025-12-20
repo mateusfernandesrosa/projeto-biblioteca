@@ -5,6 +5,10 @@
     font-family: 'Arial', sans-serif;
 }
 
+body{
+    background: black;
+}
+
 .forms-container {
     height: 100vh;
     display: flex;
@@ -27,6 +31,9 @@
     width: 300px;
 
     background: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
     border: none;
     
 }
@@ -37,6 +44,9 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid transparent;
+}
+input:focus{
+    outline: none;
 }
 
 .forms input[type="submit"] {
