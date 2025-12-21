@@ -24,11 +24,13 @@
     </div>
 </div>
 
+<script src="assets/js/main.js"></script>
+
 <script>
     const btnEnviar = document.getElementById('btnEnviar')
 
     btnEnviar.addEventListener('click', (event) => {
-        
+
         event.preventDefault()
         if(document.getElementById('username').value === 'vini' && document.getElementById('password').value === '123'){
             window.location.href = 'assets/paginas/resumo.html'
