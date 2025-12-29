@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    background: black;
+}
+
+.forms-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://wallpapercave.com/wp/wp8944713.jpg');
+    background-position: center;
+     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.forms form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: rgb(194, 188, 188);
+
+    padding: 25px;
+    width: 300px;
+
+    background: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.forms input[type="text"],
+.forms input[type="password"] {
+    background: rgb(206, 194, 194);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+input:focus{
+    outline: none;
+}
+
+.forms input[type="submit"] {
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.forms input[type="submit"]:hover {
+    background-color: #000;
+}
+

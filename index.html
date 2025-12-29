@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento e biblioteca</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+<div class="forms-container">
+    <div class="forms">
+        <form action="" method="post">
+            <h2>Login</h2>
+
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input id="btnEnviar" type="submit" value="Entrar">
+        </form>
+    </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+
+<script>
+    const btnEnviar = document.getElementById('btnEnviar')
+
+    btnEnviar.addEventListener('click', (event) => {
+
+        event.preventDefault()
+        if(document.getElementById('username').value === 'vini' && document.getElementById('password').value === '123'){
+            window.location.href = 'assets/paginas/resumo.html'
+        }else{
+            alert('Email ou Senha incorreta')
+        }
+       
+    })
+</script>
+</body>
+</html>
