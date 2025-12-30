@@ -1,0 +1,68 @@
+/* Reset e estrutura base */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Fundo com gradiente */
+.menu {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    background: linear-gradient(135deg, rgb(79, 79, 225), rgb(40, 40, 160));
+
+}
+
+/* Título */
+h1 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Estilo dos botões */
+.menu button {
+    width: 230px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(79, 79, 225);
+    background: white;
+    cursor: pointer;
+    transition: .3s ease;
+    box-shadow: 0px 4px 10px rgba(255,255,255,0.4),
+                0px 0px 10px rgba(255,255,255,0.4) inset;
+}
+
+/* Hover animado */
+.menu button:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 6px 16px rgba(255,255,255,0.6),
+                0px 0px 14px rgba(255,255,255,0.8) inset;
+    background: #f2f2f2;
+}
+
+/* Clique */
+.menu button:active {
+    transform: scale(0.95);
+    filter: brightness(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    h1 { font-size: 26px; }
+    .menu button { width: 80%; font-size: 15px; }
+}
+.menu ul {
+    list-style: none;
+    padding: 0;   /* remove recuo padrão */
+    margin: 0;
+}
