@@ -33,7 +33,7 @@ document.getElementById("btnDevolverLivro").onclick = function(){
     window.location.href = "devolver_livro.html";
 };
 
-// Exemplo de logout
+
 document.getElementById("btnSair").onclick = function(){
     alert("Saindo do sistema...");
     window.location.href = "login.html";
